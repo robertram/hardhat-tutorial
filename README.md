@@ -18,6 +18,9 @@ Video Recap
 
 https://www.loom.com/share/945c3f3f4ee847749eb12d5c4bc020e7?sid=f683c016-e160-4e2c-8182-59d2e130f556
 
+Video 2
+https://www.loom.com/share/9d4eb86d7f7b48e6aee8cfc30b0808f1?sid=3396a9aa-d22a-4c2e-a6e3-74704f2e4173
+
 ## 
 
 npx hardhat
