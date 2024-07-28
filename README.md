@@ -43,6 +43,5 @@ optimismSepolia
 
 npx hardhat ignition deploy ignition/modules/Lock.js --network sepolia --verify
 
-## See local environment
+## See local hardhat blockchain
 npx hardhat node
-# hardhat-tutorial

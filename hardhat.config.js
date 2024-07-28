@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-verify");
 require("dotenv").config();
 
 const { ALCHEMY_API_KEY, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
@@ -22,10 +23,43 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      sepolia: ETHERSCAN_API_KEY,
+      optimismSepolia: ETHERSCAN_API_KEY,
     },
+    customChains: [
+      {
+        network: "optimismSepolia",
+        chainId: 11155420,
+        urls: {
+          apiURL: "https://api-sepolia-optimistic.etherscan.io/api",
+          browserURL: "https://sepolia-optimism.etherscan.io/"
+        }
+      }
+    ]
   },
 };
+
+/**
+ * 
+ * customChains: [
+    {
+      network: "optimismSepolia",
+      chainId: 11155420,
+      urls: {
+        apiURL: "https://api-sepolia-optimistic.etherscan.io/api",
+        browserURL: "https://sepolia-optimism.etherscan.io/"
+      }
+    },
+    {
+      network: "optimismGoerli",
+      chainId: 11155420,
+      urls: {
+        apiURL: "https://api-goerli-optimistic.etherscan.io/api",
+        browserURL: "https://sepolia-optimism.etherscan.io/"
+      }
+    }
+  ], 
+ */
+
 
 /**
  * rinkeby: {
